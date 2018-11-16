@@ -1,0 +1,29 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: ghost
+  namespace: demo
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: semver:~2.6
+spec:
+  releaseName: ghost
+  chart:
+    git: ssh://git@github.com/weaveworks/flux-get-started
+    ref: master
+    path: charts/ghost
+  values:
+    image:
+      repository: bitnami/ghost
+      tag: 2.6.0
+    master:
+      persistence:
+        enabled: false
+    persistence:
+      enabled: false
+    resources:
+      requests:
+        memory: 32Mi
+        cpu: 10m
+    serviceType: ClusterIP
