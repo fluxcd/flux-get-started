@@ -16,3 +16,9 @@ spec:
     image:
       repository: chartmuseum/chartmuseum
       tag: v0.7.1
+    env:
+      open:
+        STORAGE: local
+        CACHE:
+        CACHE_REDIS_ADDR:
+        CACHE_REDIS_DB: 0
