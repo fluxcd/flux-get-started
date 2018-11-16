@@ -5,7 +5,7 @@ metadata:
   name: redis
   namespace: demo
   annotations:
-    flux.weave.works/automated: "false"
+    flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: semver:~4.0
 spec:
   releaseName: redis
@@ -26,4 +26,4 @@ spec:
     persistence:
       enabled: false
     metrics:
-      enabled: true
+      enabled: false
