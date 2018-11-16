@@ -19,6 +19,6 @@ spec:
     env:
       open:
         STORAGE: local
-        CACHE:
-        CACHE_REDIS_ADDR:
+        CACHE: redis
+        CACHE_REDIS_ADDR: "redis-master:6379"
         CACHE_REDIS_DB: 0
