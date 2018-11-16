@@ -1,3 +1,4 @@
+---
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
@@ -15,7 +16,7 @@ spec:
   values:
     image:
       repository: bitnami/redis
-      tag: 4.0.11
+      tag: 4.0.10
     service:
       type: ClusterIP
       port: 6379
