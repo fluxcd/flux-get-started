@@ -4,7 +4,7 @@ metadata:
   name: museum
   namespace: demo
   annotations:
-    flux.weave.works/automated: "false"
+    flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: semver:~0.7
 spec:
   releaseName: museum
