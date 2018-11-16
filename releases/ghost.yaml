@@ -24,4 +24,4 @@ spec:
     serviceType: ClusterIP
     mariadb:
       persistence:
-        enabled: true
+        enabled: false
