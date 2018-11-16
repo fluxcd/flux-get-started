@@ -6,7 +6,7 @@ metadata:
   namespace: demo
   annotations:
     flux.weave.works/automated: "false"
-    flux.weave.works/tag.chart-image: semver:~2.6
+    flux.weave.works/tag.chart-image: semver:~1.21
 spec:
   releaseName: ghost
   chart:
@@ -14,9 +14,7 @@ spec:
     ref: master
     path: charts/ghost
   values:
-    image:
-      repository: bitnami/ghost
-      tag: 2.6.0
+    image: bitnami/ghost:1.21.5-r0
     master:
       persistence:
         enabled: false
