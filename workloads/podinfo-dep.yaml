@@ -27,11 +27,11 @@ spec:
         app: podinfo
     spec:
       initContainers:
-        - name: init
-          image: alpine:3.7
-          command:
-            - wait
-            - "1"
+      - name: init
+        image: alpine:3.5
+        command:
+        - wait
+        - "1"
       containers:
       - name: podinfod
         image: stefanprodan/podinfo:1.3.2
