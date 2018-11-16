@@ -5,7 +5,7 @@ here](https://github.com/weaveworks/flux/blob/master/site/helm-get-started.md).
 
 ## <a name="help"></a>Getting Help
 
-If you have any questions about, feedback for or problems with `flux-helm-test`:
+If you have any questions about, feedback for or problems with `flux-get-started`:
 
 - Invite yourself to the <a href="https://slack.weave.works/" target="_blank">Weave community</a> slack.
 - Ask a question on the [#flux](https://weave-community.slack.com/messages/flux/) slack channel.
