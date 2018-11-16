@@ -15,9 +15,6 @@ spec:
     path: charts/ghost
   values:
     image: bitnami/ghost:1.21.5-r0
-    mariadb:
-      persistence:
-        enabled: true
     persistence:
       enabled: false
     resources:
@@ -25,3 +22,6 @@ spec:
         memory: 32Mi
         cpu: 10m
     serviceType: ClusterIP
+    mariadb:
+      persistence:
+        enabled: true
