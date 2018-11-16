@@ -30,7 +30,7 @@ spec:
       - name: init
         image: alpine:3.5
         command:
-        - wait
+        - sleep
         - "1"
       containers:
       - name: podinfod
