@@ -23,7 +23,6 @@ spec:
     cluster:
       enabled: false
     usePassword: false
-    persistence:
-      enabled: false
-    metrics:
-      enabled: false
+    master:
+      persistence:
+        enabled: false
