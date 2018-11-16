@@ -3,6 +3,13 @@
 We published a step-by-step run-through on how to use Flux and Helm Operator [over
 here](https://github.com/weaveworks/flux/blob/master/site/helm-get-started.md).
 
+### Workloads
+
+podinfo
+* Kubernetes deployment, ClusterIP service and Horizontal Pod Autoscaler
+* init container automated image updates (regular expression filter)
+* container automated image updates (semantic versioning filter)
+
 ### Helm releases
 
 Mongodb
