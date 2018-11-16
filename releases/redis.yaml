@@ -1,0 +1,28 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: redis
+  namespace: demo
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: semver:~4.0
+spec:
+  releaseName: redis
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: redis
+    version: 4.2.10
+  values:
+    image:
+      repository: bitnami/redis
+      tag: 4.0.11
+    service:
+      type: ClusterIP
+      port: 6379
+    cluster:
+      enabled: false
+    usePassword: false
+    persistence:
+      enabled: false
+    metrics:
+      enabled: true
