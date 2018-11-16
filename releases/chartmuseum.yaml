@@ -1,0 +1,18 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: chartmuseum
+  namespace: demo
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: semver:~0.7
+spec:
+  releaseName: chartmuseum
+  chart:
+    git: ssh://git@github.com/weaveworks/flux-get-started
+    ref: master
+    path: charts/chartmuseum
+  values:
+    image:
+      repository: chartmuseum/chartmuseum
+      tag: v0.7.1
