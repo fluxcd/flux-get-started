@@ -15,9 +15,9 @@ spec:
     path: charts/ghost
   values:
     image: bitnami/ghost:1.21.5-r0
-    master:
+    mariadb:
       persistence:
-        enabled: false
+        enabled: true
     persistence:
       enabled: false
     resources:
