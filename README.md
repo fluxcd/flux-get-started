@@ -24,7 +24,7 @@ Redis
 
 Ghost
 * Source: Git repository
-* disabled automated image updates (glog filter)
+* disabled automated image updates (glob filter)
 * has external dependency - mariadb (stable)
 
 ## <a name="help"></a>Getting Help
