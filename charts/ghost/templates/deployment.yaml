@@ -15,7 +15,6 @@ spec:
       labels:
         app: {{ template "ghost.fullname" . }}
     spec:
-      serviceAccount: testpurge
       initContainers:
       - name: volume-permissions
         image: "{{ .Values.volumePermissions.image.name }}:{{ .Values.volumePermissions.image.tag }}"
