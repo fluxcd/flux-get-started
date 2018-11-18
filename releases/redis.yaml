@@ -28,4 +28,4 @@ spec:
     usePassword: false
     master:
       persistence:
-        enabled: false
+        enabled: true
