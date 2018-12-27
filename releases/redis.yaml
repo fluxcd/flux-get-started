@@ -31,7 +31,7 @@ spec:
       enabled: false
     master:
       securityContext:
-        enabled: true
+        enabled: false
         fsGroup: 0
         runAsUser: 0
       persistence:
