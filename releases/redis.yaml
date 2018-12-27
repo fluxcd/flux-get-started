@@ -15,7 +15,7 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
-    version: 4.2.10
+    version: 5.1.3
   valueFileSecrets:
     # the redis-auth secret contains the password value
     - name: redis-auth
@@ -23,7 +23,7 @@ spec:
     usePassword: true
     image:
       repository: bitnami/redis
-      tag: 4.0.11
+      tag: 4.0.12
     service:
       type: ClusterIP
       port: 6379
