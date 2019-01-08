@@ -31,9 +31,8 @@ Ghost
 
 If you have any questions about, feedback for or problems with `flux-get-started`:
 
-- Invite yourself to the <a href="https://slack.weave.works/" target="_blank">Weave community</a> slack.
+- Invite yourself to the <a href="https://slack.weave.works/" target="_blank">Weave Users Slack</a>.
 - Ask a question on the [#flux](https://weave-community.slack.com/messages/flux/) slack channel.
-- Send an email to <a href="mailto:weave-users@weave.works">weave-users@weave.works</a>
-- <a href="https://github.com/weaveworks/flux-helm-test/issues/new">File an issue.</a>
+- [File an issue](https://github.com/weaveworks/flux-get-started/issues/new).
 
 Your feedback is always welcome!
