@@ -15,7 +15,7 @@ action "kube-lint" {
 }
 
 action "helm-lint" {
-  needs = ["yaml-lint"]
+  needs = ["kube-lint"]
   uses = "stefanprodan/gh-actions/helm@master"
   args = ["lint charts/*"]
 }
