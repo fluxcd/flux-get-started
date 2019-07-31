@@ -1,7 +1,7 @@
 # flux-get-started
 
 We published a step-by-step run-through on how to use Flux and Helm Operator [over
-here](https://github.com/weaveworks/flux/blob/master/site/helm-get-started.md).
+here](https://github.com/fluxcd/flux/blob/master/docs/install/helm-get-started.md).
 
 ### Workloads
 
@@ -33,6 +33,6 @@ If you have any questions about, feedback for or problems with `flux-get-started
 
 - Invite yourself to the <a href="https://slack.weave.works/" target="_blank">Weave Users Slack</a>.
 - Ask a question on the [#flux](https://weave-community.slack.com/messages/flux/) slack channel.
-- [File an issue](https://github.com/weaveworks/flux-get-started/issues/new).
+- [File an issue](https://github.com/fluxcd/flux-get-started/issues/new).
 
 Your feedback is always welcome!
