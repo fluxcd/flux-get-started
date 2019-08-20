@@ -46,8 +46,8 @@ spec:
         - --random-delay=false
         - --random-error=false
         env:
-        - name: PODINFO_UI_COLOR
-          value: green
+        - name: PODINFO_UI_MESSAGE
+          value: "Greetings human!"
         livenessProbe:
           httpGet:
             path: /healthz
