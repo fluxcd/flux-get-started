@@ -5,8 +5,8 @@ metadata:
   name: mongodb
   namespace: demo
   annotations:
-    flux.weave.works/automated: "false"
-    flux.weave.works/tag.chart-image: semver:~4.0
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: semver:~4.0
 spec:
   releaseName: mongodb
   chart:

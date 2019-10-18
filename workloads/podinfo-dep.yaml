@@ -7,9 +7,9 @@ metadata:
   labels:
     app: podinfo
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.init: regex:^3.10.*
-    flux.weave.works/tag.podinfod: semver:~2.1
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.init: regex:^3.10.*
+    fluxcd.io/tag.podinfod: semver:~2.1
 spec:
   strategy:
     rollingUpdate:
