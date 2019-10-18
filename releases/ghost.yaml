@@ -5,8 +5,8 @@ metadata:
   name: ghost
   namespace: demo
   annotations:
-    flux.weave.works/automated: "false"
-    flux.weave.works/tag.chart-image: glob:1.21.*
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: glob:1.21.*
 spec:
   releaseName: ghost
   chart:
