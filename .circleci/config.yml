@@ -1,0 +1,39 @@
+version: 2.1
+jobs:
+  validate-yamls:
+    docker:
+      - image: circleci/golang:1.13
+    steps:
+      - checkout
+      - run:
+          name: Install kubeval and hrval
+          command: |
+            curl -sL https://raw.githubusercontent.com/stefanprodan/hrval-action/v2.3.0/src/deps.sh | sudo bash
+            sudo curl -sL https://raw.githubusercontent.com/stefanprodan/hrval-action/v2.3.0/src/hrval.sh \
+              -o /usr/local/bin/hrval.sh && sudo chmod +x /usr/local/bin/hrval.sh
+            sudo curl -sL https://raw.githubusercontent.com/stefanprodan/hrval-action/v2.3.0/src/hrval-all.sh \
+              -o /usr/local/bin/hrval && sudo chmod +x /usr/local/bin/hrval
+      - run:
+          name: Validate workloads
+          environment:
+            KUBE_VER: "1.16.0"
+          command: |
+            kubeval --strict --ignore-missing-schemas --kubernetes-version ${KUBE_VER} -d namespaces,workloads,releases
+      - run:
+          name: Validate releases
+          environment:
+            IGNORE_VALUES: "false"
+            KUBE_VER: "1.15.0"
+            HELM_VER: "v2"
+          command: |
+            hrval releases/ $IGNORE_VALUES $KUBE_VER $HELM_VER
+
+workflows:
+  version: 2
+  validate:
+    jobs:
+      - validate-yamls:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
