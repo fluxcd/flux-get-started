@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: ghost
   chart:
-    git: ssh://git@github.com/weaveworks/flux-get-started
+    git: ssh://git@github.com/fluxcd/flux-get-started
     ref: master
     path: charts/ghost
   values:
