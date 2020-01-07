@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   validate-yamls:
     docker:
-      - image: stefanprodan/hrval:v2.6.0
+      - image: stefanprodan/hrval:v2.9.0
     steps:
       - checkout
       - run:
@@ -15,7 +15,7 @@ jobs:
           name: Validate releases
           environment:
             IGNORE_VALUES: "false"
-            KUBE_VER: "1.15.0"
+            KUBE_VER: "1.16.0"
             HELM_VER: "v2"
           command: |
             hrval releases/ $IGNORE_VALUES $KUBE_VER $HELM_VER
