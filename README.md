@@ -1,6 +1,12 @@
 # flux-get-started
 
-[![CircleCI](https://circleci.com/gh/fluxcd/flux-get-started.svg?style=svg)](https://circleci.com/gh/fluxcd/flux-get-started)
+## We are moving to Flux v2
+
+> ⚠️ Please note: In preparation of [Flux v2](https://toolkit.fluxcd.io/) GA this repository with Flux v1 examples has been archived. The Flux v2 equivalent of what is shown here can be found at [flux2-kustomize-helm-example](https://github.com/fluxcd/flux2-kustomize-helm-example).
+>
+> Thanks a lot for your interest.
+
+## For posterity
 
 We published a step-by-step run-through on how to use Flux and Helm Operator [over
 here](https://github.com/fluxcd/flux/blob/master/docs/tutorials/get-started-helm.md).
